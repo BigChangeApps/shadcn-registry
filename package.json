@@ -5,7 +5,7 @@
   "type": "module",
   "repository": {
     "type": "git",
-    "url": "https://github.com/vantezzen/shadcn-registry-template"
+    "url": "https://github.com/BigChangeApps/shadcn-registry"
   },
   "scripts": {
     "build": "tsx scripts/build.ts",
@@ -17,6 +17,7 @@
     "dev:server": "concurrently 'http-server dist' 'npm run dev:build'"
   },
   "dependencies": {
+    "@radix-ui/react-accordion": "^1.2.3",
     "@radix-ui/react-slot": "^1.1.0",
     "chalk": "^5.3.0",
     "class-variance-authority": "^0.7.0",
@@ -50,8 +51,5 @@
     "typescript": "^5.5.3",
     "typescript-eslint": "^8.0.1",
     "vite": "^5.4.1"
-  },
-  "components": [
-    "cool-text"
-  ]
+  }
 }
