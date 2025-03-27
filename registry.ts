@@ -31,7 +31,7 @@ const registry: RegistryEntry[] = [
     registryDependencies: [],
 
     // npm dependencies that this component depends on
-    dependencies: [],
+    dependencies: ["@radix-ui/react-slot"],
     devDependencies: [],
 
     // Tailwind CSS config
@@ -119,7 +119,7 @@ const registry: RegistryEntry[] = [
     registryDependencies: [],
 
     // npm dependencies that this component depends on
-    dependencies: [],
+    dependencies: ["@radix-ui/react-label"],
     devDependencies: [],
 
     // Tailwind CSS config
@@ -146,7 +146,7 @@ const registry: RegistryEntry[] = [
     ],
 
     // npm dependencies that this component depends on
-    dependencies: [],
+    dependencies: [ ],
     devDependencies: [],
 
     // Tailwind CSS config

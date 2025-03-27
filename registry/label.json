@@ -2,7 +2,9 @@
   "name": "label",
   "type": "registry:ui",
   "registryDependencies": [],
-  "dependencies": [],
+  "dependencies": [
+    "@radix-ui/react-label"
+  ],
   "devDependencies": [],
   "tailwind": {
     "config": {}
