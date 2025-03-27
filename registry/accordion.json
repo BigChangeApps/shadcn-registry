@@ -1,9 +1,7 @@
 {
   "name": "accordion",
   "type": "registry:ui",
-  "registryDependencies": [
-    "accordion"
-  ],
+  "registryDependencies": [],
   "dependencies": [],
   "devDependencies": [],
   "tailwind": {

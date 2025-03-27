@@ -6,7 +6,7 @@ const registry: RegistryEntry[] = [
     type: "registry:ui",
 
     // shadcn-ui components that this component depends on
-    registryDependencies: ["accordion"],
+    registryDependencies: [],
 
     // npm dependencies that this component depends on
     dependencies: [],
@@ -28,7 +28,7 @@ const registry: RegistryEntry[] = [
     type: "registry:ui",
 
     // shadcn-ui components that this component depends on
-    registryDependencies: ["button"],
+    registryDependencies: [],
 
     // npm dependencies that this component depends on
     dependencies: [],

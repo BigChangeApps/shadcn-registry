@@ -1,9 +1,7 @@
 {
   "name": "button",
   "type": "registry:ui",
-  "registryDependencies": [
-    "button"
-  ],
+  "registryDependencies": [],
   "dependencies": [],
   "devDependencies": [],
   "tailwind": {
