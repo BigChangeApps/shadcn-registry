@@ -2,6 +2,28 @@ import { RegistryEntry } from "./scripts/schema";
 
 const registry: RegistryEntry[] = [
   {
+    name: "slider",
+    type: "registry:ui",
+
+    // shadcn-ui components that this component depends on
+    registryDependencies: [],
+
+    // npm dependencies that this component depends on
+    dependencies: ["@radix-ui/react-slider"],
+    devDependencies: [],
+
+    // Tailwind CSS config
+    tailwind: {
+      config: {},
+    },
+
+    // CSS variables
+    cssVars: {},
+
+    // Files that make up this component in your src/components/ui folder
+    files: ["slider.tsx"],
+  },
+  {
     name: "accordion",
     type: "registry:ui",
 
