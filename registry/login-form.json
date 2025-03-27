@@ -1,0 +1,23 @@
+{
+  "name": "login-form",
+  "type": "registry:ui",
+  "registryDependencies": [
+    "https://raw.githubusercontent.com/BigChangeApps/shadcn-registry/main/registry/input.json",
+    "https://raw.githubusercontent.com/BigChangeApps/shadcn-registry/main/registry/card.json",
+    "https://raw.githubusercontent.com/BigChangeApps/shadcn-registry/main/registry/label.json",
+    "https://raw.githubusercontent.com/BigChangeApps/shadcn-registry/main/registry/button.json"
+  ],
+  "dependencies": [],
+  "devDependencies": [],
+  "tailwind": {
+    "config": {}
+  },
+  "cssVars": {},
+  "files": [
+    {
+      "path": "blocks/login-form.tsx",
+      "content": "import { cn } from \"@/lib/utils\"\r\nimport { Button } from \"@/components/ui/button\"\r\nimport {\r\n  Card,\r\n  CardContent,\r\n  CardDescription,\r\n  CardHeader,\r\n  CardTitle,\r\n} from \"@/components/ui/card\"\r\nimport { Input } from \"@/components/ui/input\"\r\nimport { Label } from \"@/components/ui/label\"\r\nexport function LoginForm({\r\n  className,\r\n  ...props\r\n}: React.ComponentPropsWithoutRef<\"div\">) {\r\n  return (\r\n    <div className={cn(\"flex flex-col gap-6\", className)} {...props}>\r\n      <Card>\r\n        <CardHeader>\r\n          <CardTitle className=\"text-2xl\">Login</CardTitle>\r\n          <CardDescription>\r\n            Enter your email below to login to your account\r\n          </CardDescription>\r\n        </CardHeader>\r\n        <CardContent>\r\n          <form>\r\n            <div className=\"flex flex-col gap-6\">\r\n              <div className=\"grid gap-2\">\r\n                <Label htmlFor=\"email\">Email</Label>\r\n                <Input\r\n                  id=\"email\"\r\n                  type=\"email\"\r\n                  placeholder=\"m@example.com\"\r\n                  required\r\n                />\r\n              </div>\r\n              <div className=\"grid gap-2\">\r\n                <div className=\"flex items-center\">\r\n                  <Label htmlFor=\"password\">Password</Label>\r\n                  <a\r\n                    href=\"#\"\r\n                    className=\"ml-auto inline-block text-sm underline-offset-4 hover:underline\"\r\n                  >\r\n                    Forgot your password?\r\n                  </a>\r\n                </div>\r\n                <Input id=\"password\" type=\"password\" required />\r\n              </div>\r\n              <Button type=\"submit\" className=\"w-full\">\r\n                Login\r\n              </Button>\r\n              <Button variant=\"outline\" className=\"w-full\">\r\n                Login with Google\r\n              </Button>\r\n            </div>\r\n            <div className=\"mt-4 text-center text-sm\">\r\n              Don&apos;t have an account?{\" \"}\r\n              <a href=\"#\" className=\"underline underline-offset-4\">\r\n                Sign up\r\n              </a>\r\n            </div>\r\n          </form>\r\n        </CardContent>\r\n      </Card>\r\n    </div>\r\n  )\r\n}",
+      "type": "registry:ui"
+    }
+  ]
+}

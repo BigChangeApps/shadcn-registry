@@ -13,9 +13,11 @@ for (const registryData of registryConfig) {
 
   registry.files = registry.files || [];
 
-  for (const file of registry.files) {
+  for (const file of registry.files) {      console.log(`./src/components/ui/${file}`);
     if (typeof file === "string") {
       const content = await readFile(`./src/components/ui/${file}`, "utf-8");
+
+      console.log(content);
       registry.files = registry.files.filter((f) => f !== file);
       registry.files.push({
         path: file,
